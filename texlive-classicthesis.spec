@@ -1,3 +1,9 @@
+# revision 23354
+# category Package
+# catalog-ctan /macros/latex/contrib/classicthesis
+# catalog-date 2011-06-06 21:31:27 +0200
+# catalog-license gpl
+# catalog-version 3.0
 Name:		texlive-classicthesis
 Version:	3.0
 Release:	1
@@ -75,6 +81,7 @@ make thesis writing easier.
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/example_2.jpg
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/example_3.jpg
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/example_4.jpg
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -85,3 +92,5 @@ make thesis writing easier.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
