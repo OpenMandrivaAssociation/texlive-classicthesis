@@ -1,11 +1,11 @@
-# revision 23354
+# revision 24878
 # category Package
 # catalog-ctan /macros/latex/contrib/classicthesis
-# catalog-date 2011-06-06 21:31:27 +0200
+# catalog-date 2011-12-19 11:01:35 +0100
 # catalog-license gpl
-# catalog-version 3.0
+# catalog-version 4.0
 Name:		texlive-classicthesis
-Version:	3.0
+Version:	4.0
 Release:	1
 Summary:	A "classically styled" thesis package
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The classicthesis package provides an elegant layout designed
@@ -28,24 +26,23 @@ achievable using TeX. Included in the bundle are templates to
 make thesis writing easier.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/classicthesis/classicthesis-preamble.sty
 %{_texmfdistdir}/tex/latex/classicthesis/classicthesis.sty
 %doc %{_texmfdistdir}/doc/latex/classicthesis/Bibliography.bib
 %doc %{_texmfdistdir}/doc/latex/classicthesis/CHANGES
@@ -77,6 +74,7 @@ make thesis writing easier.
 %doc %{_texmfdistdir}/doc/latex/classicthesis/FrontBackmatter/Titlepage.tex
 %doc %{_texmfdistdir}/doc/latex/classicthesis/LISTOFFILES
 %doc %{_texmfdistdir}/doc/latex/classicthesis/README
+%doc %{_texmfdistdir}/doc/latex/classicthesis/classicthesis-config.tex
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/TFZsuperellipse_bw.pdf
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/example_1.jpg
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/example_2.jpg
