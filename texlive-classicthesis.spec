@@ -25,16 +25,8 @@ It makes use of a range of techniques to get the best results
 achievable using TeX. Included in the bundle are templates to
 make thesis writing easier.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -80,7 +72,6 @@ make thesis writing easier.
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/example_2.jpg
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/example_3.jpg
 %doc %{_texmfdistdir}/doc/latex/classicthesis/gfx/example_4.jpg
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -91,5 +82,3 @@ make thesis writing easier.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
