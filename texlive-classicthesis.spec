@@ -1,12 +1,12 @@
-# revision 24878
+# revision 27416
 # category Package
 # catalog-ctan /macros/latex/contrib/classicthesis
-# catalog-date 2011-12-19 11:01:35 +0100
+# catalog-date 2012-08-15 13:45:23 +0200
 # catalog-license gpl
-# catalog-version 4.0
+# catalog-version 4.1
 Name:		texlive-classicthesis
-Version:	4.0
-Release:	2
+Version:	4.1
+Release:	1
 Summary:	A "classically styled" thesis package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/classicthesis
@@ -49,6 +49,8 @@ make thesis writing easier.
 %doc %{_texmfdistdir}/doc/latex/classicthesis/ClassicThesis.tps
 %doc %{_texmfdistdir}/doc/latex/classicthesis/Examples/classicthesis-article.pdf
 %doc %{_texmfdistdir}/doc/latex/classicthesis/Examples/classicthesis-article.tex
+%doc %{_texmfdistdir}/doc/latex/classicthesis/Examples/classicthesis-book-xelatex.pdf
+%doc %{_texmfdistdir}/doc/latex/classicthesis/Examples/classicthesis-book-xelatex.tex
 %doc %{_texmfdistdir}/doc/latex/classicthesis/Examples/classicthesis-book.pdf
 %doc %{_texmfdistdir}/doc/latex/classicthesis/Examples/classicthesis-book.tex
 %doc %{_texmfdistdir}/doc/latex/classicthesis/Examples/classicthesis-cv.pdf
