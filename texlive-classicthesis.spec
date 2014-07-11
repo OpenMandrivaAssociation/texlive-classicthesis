@@ -6,7 +6,7 @@
 # catalog-version 4.1
 Name:		texlive-classicthesis
 Version:	4.1
-Release:	6
+Release:	7
 Summary:	A "classically styled" thesis package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/classicthesis
