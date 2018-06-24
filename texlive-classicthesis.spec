@@ -1,5 +1,5 @@
 Name:		texlive-classicthesis
-Version:	4.4
+Version:	4.6
 Release:	1
 Summary:	A "classically styled" thesis package
 Group:		Publishing
