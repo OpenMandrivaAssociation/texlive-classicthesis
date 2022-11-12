@@ -5,8 +5,8 @@ Summary:	A "classically styled" thesis package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/classicthesis
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/classicthesis.r48041.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/classicthesis.doc.r48041.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/classicthesis.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/classicthesis.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
