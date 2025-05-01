@@ -1,6 +1,6 @@
 Name:		texlive-classicthesis
-Version:	48041
-Release:	2
+Version:	73676
+Release:	1
 Summary:	A "classically styled" thesis package
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/classicthesis
